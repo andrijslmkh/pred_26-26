@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>PREDICTION</title>
+	<link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+	<header class="header">
+		<p>UEFA GROUP PREDICTION 25/26.</p>
+	</header>
+	<div class="wrapper">
+		<main class="main">
+			<section class="table__section">
+				<!-- select -->
+				<div class="table__select">
+					<div class="select">
+						<label>
+							<select class="select__league" name="league">
+								<option value="lch" selected>LCH</option>
+								<option value="le">LE</option>
+								<option value="lc">LC</option>
+							</select>
+						</label>
+					</div>
+					<div class="select">
+						<label>
+							<select class="select__user" name="user">
+								<!-- <option value="clear" selected>Remove prediction</option> -->
+								<!-- <option value="milanskih">Milanskih</option> -->
+								<option value="slmkh" selected>Slmkh</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<!--  end select -->
+
+				<!-- button -->
+				<div class="button__mobile">
+					<!-- <button type="button" class="btn-table">Table</button> -->
+					<!-- <button type="button" class="btn-result">Result</button> -->
+					<!-- <button type="button" class="btn-regulations">Regulations</button> -->
+
+					<div class="button btn-table" id="button-5">
+						<div id="translate"></div>
+						<a href="#">Table</a>
+					</div>
+					<div class="button btn-result" id="button-5">
+						<div id="translate"></div>
+						<a href="#">Result</a>
+					</div>
+					<div class="button btn-regulations" id="button-5">
+						<div id="translate"></div>
+						<a href="#">Regulations</a>
+					</div>
+				</div>
+				<!-- end button -->
+
+				<!-- table -->
+				<div class="table">
+					<!-- table info -->
+					<div class="table__block">
+						<div class="table__description">
+							<div class="table__items">
+								<div class="item pred__icon">PRED</div>
+								<div class="item position">№</div>
+								<div class="item team__icon"></div>
+								<div class="item team__name">TEAM NAME</div>
+								<div class="item team__games">G</div>
+								<div class="item team__win">W</div>
+								<div class="item team__draw">D</div>
+								<div class="item team__lose">L</div>
+								<div class="item team__point">P</div>
+								<div class="item team__strick">strick</div>
+							</div>
+						</div>
+						<div class="table__team"></div>
+					</div>
+					<!-- and table info -->
+
+					<!-- table result  -->
+					<div class="result__table">
+						<div class="">
+							<div class="result__description">
+								<div class="item user__position">№</div>
+								<div class="item user">User</div>
+								<div class="item user__lch">LCH</div>
+								<div class="item user__le">LE</div>
+								<div class="item user__lc">LC</div>
+								<div class="item user__total">Total</div>
+							</div>
+							<div class="result__info"></div>
+						</div>
+
+						<div class="result__tour mt-2 relative overflow-x-auto">
+							<table class="w-full text-sm text-left text-gray-400 border border-[#73727294]">
+								<thead class="text-xs uppercase text-center">
+									<tr>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5">
+											№
+										</th>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5 text-left">
+											Name
+										</th>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5">
+											1
+										</th>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5">
+											2
+										</th>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5">
+											3
+										</th>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5">
+											4
+										</th>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5">
+											5
+										</th>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5">
+											6
+										</th>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5">
+											7
+										</th>
+										<th scope="col" class="border-r border-[#73727294] last:border-0 px-3 py-1.5">
+											8
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- <tr class="border-t text-center border-[#73727294]">
+												<td
+													class="px-6 py-4 border-r border-[#73727294] last:border-0"
+												>
+													1
+												</td>
+												<th
+													scope="row"
+													class="px-6 py-4 font-medium whitespace-wrap text-white text-left border-r border-[#73727294] last:border-0"
+												>
+													Slmkh
+												</th>
+												<td
+													class="px-6 py-4 border-r border-[#73727294] last:border-0"
+												>
+													20
+												</td>
+												<td
+													class="px-6 py-4 border-r border-[#73727294] last:border-0"
+												>
+													24
+												</td>
+												<td
+													class="px-6 py-4 border-r border-[#73727294] last:border-0"
+												>
+													54
+												</td>
+												<td
+													class="px-6 py-4 border-r border-[#73727294] last:border-0"
+												>
+													54
+												</td>
+												<td
+													class="px-6 py-4 border-r border-[#73727294] last:border-0"
+												>
+													54
+												</td>
+												<td
+													class="px-6 py-4 border-r border-[#73727294] last:border-0"
+												>
+													54
+												</td>
+												<td
+													class="px-6 py-4 border-r border-[#73727294] last:border-0"
+												>
+													54
+												</td>
+												<td
+													class="px-6 py-4 border-r border-[#73727294] last:border-0"
+												>
+													54
+												</td>
+											</tr> -->
+								</tbody>
+							</table>
+						</div>
+
+						<div style="margin-top: 20px; display: flex; justify-content: center" class="img">
+							<img src="img/1000.jpg" alt="1000 uah" />
+						</div>
+					</div>
+					<!-- end table result  -->
+				</div>
+				<!-- end table -->
+			</section>
+
+			<section class="regulations">
+				<div class="regulations__description">
+					<h2 class="regulations__title">Правила:</h2>
+					<p class="regulations__text">
+						<span class="regulations__number">1.</span>
+						Таблиця ділиться на три групи (ТІР), ТІР 1 це команди котрі
+						займають місце з 1 по 8 і попадають на пряму в 1\8, ТІР 2 це
+						команди котрі займають місця з 9 по 24 і попадають в стикові матчі
+						на виліт, ТІР 3 це команди з 25 по 36 які вилітають з турніру.
+					</p>
+					<p class="regulations__text">
+						<span class="regulations__number">2.</span>
+						Як нараховуються очки в прогнозі? За точний прогноз нараховується
+						3 бала ( <span class="regulations_colorBox bg_green"></span> колір
+						). Якщо команда займає місце в ТІР (по прогнозу) але не співпадає
+						з місцем прогнозу тоді нараховується 1 бал (
+						<span class="regulations_colorBox bg_yellow"></span>
+						колір ). Якщо команда займає місце не в своєму ТІР тоді
+						нараховується 0 балів.
+					</p>
+					<p class="regulations__text">
+						<span class="regulations__number">3.</span>
+						До прогнозів враховуються 24 команди (ТІР 1 та ТІР 2).
+					</p>
+					<p class="regulations__text">
+						<span class="regulations__number">4.</span>
+						Всі ліги рахуються за одинаковою кількістю балів.
+					</p>
+					<p class="regulations__text">
+						<span class="regulations__number">5.</span>
+						В стовпці PRED відображаються лого команд яких користувач поставив
+						у свій прогноз. В колонці № відображаються поточні місця в групі.
+						В колонці NAME TEAM відображаються команди які беруть участь в
+						лізі.
+					</p>
+					<p class="regulations__text">
+						<span class="regulations__number">6.</span>
+						Розположення по позиціях команд, кількість зіграних матчів, бали
+						беруться з офіційного сайту UEFA.
+					</p>
+				</div>
+			</section>
+		</main>
+	</div>
+	<footer></footer>
+
+	<!-- modal -->
+	<!-- <div class="modal">
+      <div class="modal__window">
+        <div
+          class="modal__overlay"
+          style="background-image: url(&quot;img/gif.webp&quot;)"
+        ></div>
+        <div class="modal__info">
+          <div class="modal__img">
+            <img src="img/photo.jpg" alt="photo user winner" />
+          </div>
+          <div class="modal__description">
+            <p>
+              Вітаємо переможця прогнозу групової стадії
+              <span>UEFA</span> сезону <span>2024-2025</span>.
+            </p>
+            <div class="modal__name">Milanskih</div>
+          </div>
+        </div>
+      </div>
+      <button class="modal__btn">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </div> -->
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

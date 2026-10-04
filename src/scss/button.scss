@@ -1,0 +1,23 @@
+.button {
+  @apply inline-flex items-center justify-center overflow-hidden border-2 border-solid border-[#bfc0c0] px-2 py-1 text-xs uppercase tracking-[1.5px] text-[#bfc0c0] no-underline;
+}
+
+#button-5 {
+  @apply relative cursor-pointer overflow-hidden;
+}
+
+#button-5 a {
+  @apply relative font-semibold transition-colors duration-500 ease-out;
+}
+
+#translate {
+  @apply absolute -left-full -top-1 h-full w-full bg-[#bfc0c0] transition-all duration-300 ease-out;
+}
+
+#button-5:hover #translate {
+  @apply -left-1;
+}
+
+#button-5:hover a {
+  @apply text-[#2d3142];
+}
