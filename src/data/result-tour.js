@@ -1,4 +1,4 @@
 const RESULT_TOUR = {
-	slmkh: [],
-	milanskih: [],
+	slmkh: [16],
+	// milanskih: [],
 };
